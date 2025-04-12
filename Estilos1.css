@@ -33,3 +33,108 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.HTML */
     font-size: 50px;
     color: red;
 }
+
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    margin-top: 0px;
+   margin-left:20px ;
+   margin-right:80px; 
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    top: 20px;  /* esto no funciona en static */
+    left:80px ;  /* esto no funciona en static */
+    right:200px;  /* esto no funciona en static */
+    
+}
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative:hover {
+    position:relative; 
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante o atras en profundidad respecto a otro elemento  */
+}
+
+.clase_Relative2{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+
+.clase_Relative2:hover {
+    position:relative; 
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+
+.clase_absolute {
+    font-size: 20px;
+    background-color: green ;
+    height: 250px;
+    width: 200;
+    position: absolute;
+    top: 4000px;
+    left: 100px;
+    z-index: -10;
+}
+
+.clase_Relative3 {
+    font-size: 20px;
+    background-color:rgb(0, 255, 136) ;
+    height: 250px;
+    width: 200px;
+    position: relative;
+
+}
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color:rgb(255, 0, 140) ;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    bottom: 300px;
+    left: 550px;
+
+}
+
+.clase_pixel {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    left: 550px;
+    bottom: 200px;
+    z-index: -10;
+
+}
+
+.marca_agua {
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 10;  
+
+}
+
+.clase_Sticky {
+  position: sticky;
+  font-size: 40px;
+  top: 0px;
+  left: 40px;
+  height: 300px;
+
+}
