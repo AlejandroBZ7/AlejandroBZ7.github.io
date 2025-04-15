@@ -114,11 +114,10 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.HTML */
 }
 
 .clase_pixel {
-    height: 200px;
-    width: 200px;
+    height: 950px;
+    width: 2000px;
     position: fixed;
-    left: 550px;
-    bottom: 200px;
+    top: 5px;
     z-index: -10;
 
 }
