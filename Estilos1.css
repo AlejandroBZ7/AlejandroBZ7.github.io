@@ -114,8 +114,8 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.HTML */
 }
 
 .clase_pixel {
-    height: 950px;
-    width: 2000px;
+    height: 350px;
+    width: 200px;
     position: fixed;
     top: 5px;
     z-index: -10;
@@ -135,5 +135,76 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.HTML */
   top: 0px;
   left: 40px;
   height: 300px;
+
+}
+
+.tipoinlineblock {
+ background-color: blueviolet;
+ font-size: 40px;
+ margin: 20px;
+ color: rgb(16, 100, 3);
+ display: inline-block;
+ width: 600px;
+
+}
+
+.enlinea {
+ background-color: rgb(189, 43, 226);
+ font-size: 40px;
+ margin: 20px;
+ color: rgb(41, 36, 107);
+ display: inline;
+ width: 80px;
+ height: 40px;
+
+}
+
+.bloque {  /* estilo display por defecto */
+ background-color: aquamarine;
+ font-size: 30px;
+ margin: 10px;
+ color: rgb(71, 4, 31);
+
+}
+
+.tiponone {
+ background-color: rgb(156, 226, 43);
+ font-size: 40px;
+ margin: 20px;
+ color: rgb(6, 35, 68);
+ display: none;
+
+}
+
+.tipohidden {
+ background-color: rgb(216, 29, 29);
+ font-size: 40px;
+ margin: 20px;
+ color: rgb(187, 37, 167);
+ visibility: hidden;
+ height: 200px;
+
+}
+
+.tipoflex {
+ display: flex;
+ background-color: bisque;
+ align-items: center;
+ justify-content: space-between;
+
+}
+
+.claseNav {
+ background-color: brown;
+ font-size: 30px;
+ color: aquamarine;
+ padding-inline: 0px;
+ display: inline;
+ list-style-type: none;
+
+}
+
+.claseNav a:hover {
+background-color: rgb(122, 45, 45);
 
 }
