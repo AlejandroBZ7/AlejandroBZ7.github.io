@@ -208,3 +208,37 @@ h2 { /* este estilo afecta a todos los h2 de INDEX2.HTML */
 background-color: rgb(122, 45, 45);
 
 }
+
+.claseNav ul {
+list-style-type: none;
+display: block;
+margin:0px ;
+padding: 0px;
+
+}
+
+.claseNav li a {
+text-decoration: none;
+display: block;
+padding: 10px 21px;
+    
+}
+
+.claseNav >li {
+float :left;
+
+}
+
+.claseNav li ul {
+display: block;
+position: absolute;
+min-width: 140px;
+background-color: blue;    
+
+}
+
+.claseNav li:hover>ul {
+background-color: rgb(236, 222, 16);
+display: block;
+
+}
