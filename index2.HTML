@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="stylesheet" href="Estilos1.css">
-
-    <title> DIRESIMAR </title>
+   <script type="text/javascript" src="SCRIPT1.js" >   </script>
+    
+   <title> DIRESIMAR </title>
 </head>
 <body style="background-color: rgb(70, 146, 165);" >
     
@@ -411,7 +412,43 @@
 
 </form>
 
+<div style="font-size: 30px;"> Contenedor Resultado en java script
 
+  <div id="resultado " style="font-size: 30px;">   
+   <p> OPERACION SUMA </p>
+  </div>
+
+</div>
+
+
+<script>
+  window.alert("Bienvenidos"); //comando de windows
+  /*javascript acepta los 2 tipos de comandos */
+  var valor1 = 40; var valor2 = 60;
+  var suma = valor1 +valor2;   var resta = valor1 -valor2;
+  document.write("<br> <br><br> FIN DE PAGINA"); //
+
+  console.log("El valor de la suma de ",valor1," con ",valor2 ," es :",suma);
+  console.log("El valor de la resta de ",valor1," con ",valor2 ," es :",resta);
+  document.getElementById("resultado").innerHTML=
+  " <br>El valor de la suma de "+valor1+"con" +valor2 +" es :"+suma+ "<br>"
+    "El valor de la resta de "+valor1+" con "+valor2 +" es :"+resta;
+
+
+</script>
+
+
+<section>
+  <h1 style="font-size: 40px;"> MANIPULACION DEL DOM </h1>
+  <P id="ejmDOM1" style="font-size: 25px;">
+    Este es un Texto Inicial a aplicar DOM
+  </P>
+ 
+  <button style="font-size: 25px;"
+  onclick="FCambioColor()"> CAMBIO COLOR 
+  </button>
+
+</section>
 
 
 </body>
