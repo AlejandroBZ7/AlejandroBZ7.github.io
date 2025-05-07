@@ -352,7 +352,7 @@
 
 </p>
 
-<a href="#POSICIONINICIAL"> VOLVER AL INICIO </a>
+<a href="#POSICIONINICIAL"> VOLVER AL INICIO  </a>
 
 
 
@@ -360,12 +360,17 @@
 
 <form action="copia.html" method="post">
 
-<p>  <label for="nombre"> Nombre: <input type="text" id="nombre"></label></p>
-<p>  <label for="apellido"> Apellido: <input type="text" id="apellido"></label></p>
-<p>  <label for="edad"> Edad: <input type="text" id="edad"></label></p>
-<p>  <label for="observacion"> observacion: <textarea name="observacion" id="observacion" style="height: 150px; width: 300px; font-size: 30px;" >
-   </textarea>
-  </label>
+<p>  <label for="nombre"> Nombre: <input type="text" id="nombre" name="nombre" class="datosPersonales" required> </label> </p>
+<p>  <label for="apellido"> Apellido: <input type="text" name="apellido" id="apellido" class="datosPersonales"> </label> </p>
+<p>  <label for="edad"> Edad: <input type="number" id="edad" name="edad" class="datosPersonales" min="18" max="80"> </label> </p>
+
+<p>  <label for="observacion"> observacion: 
+     <textarea name="observacion" id="observacion" 
+       style="height: 150px; width: 300px; font-size: 30px;" >
+  
+     </textarea>
+
+</label>
  </p>
 
 <p>
@@ -400,12 +405,31 @@
 
 </p>
 
+<br>
+
+
 <label for="fecha"> SELECCIONE FECHA: 
   <input style="font-size:25px" type="date" name="fecha" id="fecha">
 </label>
 <br><br><br>
-<button type="submit" style="font-size:30px ;" > enviar </button>
 
+<label for="clave"> SELECCIONE CLAVE </label>
+<input style="font-size: 20px;" type="password" name="clave" id="clave">
+ 
+<label for="reset"> resetear: 
+<input style="font-size: 20px;" type="reset" name="resetear" id="resetear">    
+</label>
+
+<label for="email"> INGRESE EMAIL: 
+<input style="font-size: 20px;" type="email" name="correo" id="email" placeholder="@certus.edu.pe">    
+</label>
+
+
+<button style="font-size: 30px;" type="button" onclick="FCapturarNombre()"> Copiar Nombre a Observaciones </button>
+<br><br><br>
+
+<button type="submit" style="font-size:30px ;" > enviar </button>
+ 
 
 
 
@@ -459,5 +483,22 @@
 <button onlyclick="FCambioTag1()"> </button>
 <button onlyclick="FCambioClase()"> </button>
 
+<section> 
+
+  <h2> USO DE FOR clasico y condicionales en una class </h2>
+
+   <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+    <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+    <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+    <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+
+    <button style="font-size:25px ;" onclick="FUsoFor1()">
+       Reporte de classFOR1</button>
+    <button style="font-size:25px ;" onclick="FEliminarConcat()">
+        Eliminar concatenacion</button>   
+</section>
+
+
+  
 </body>
 </html>
