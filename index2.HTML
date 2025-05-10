@@ -385,7 +385,11 @@
 
     </select>
 
+<p style="font-size: 20px;"> <label for="numColegios"> Numero Colegios que estudió: 
+  <input type="number" id="numColegios" name="numColegios"  style="font-size: 20px;" min="1" max="12"> </label> </p>
 
+
+<div id="DetalleColegios"> Detalle Estudios: </div>
 
    </label>
 </p>
@@ -404,6 +408,22 @@
 
 
 </p>
+
+<p> <label>Ciclo actual</label> <br>
+    <input style="scale:1.5 ;" id="Primero" type="radio" name="ciclo" value="Primero">
+    <label for="Primero">Primero</label><br>
+    <input style="scale:1.5 ;" id="Segundo" type="radio" name="ciclo" value="Segundo">
+    <label for="Segundo">Segundo</label><br>
+    <input style="scale:1.5 ;" id="Tercero" type="radio" name="ciclo" value="Tercero">
+    <label for="Tercero">Tercero</label><br>
+    <input style="scale:1.5 ;" id="Cuarto"  type="radio" name="ciclo" value="Cuarto">
+    <label for="Cuarto">Cuarto</label><br>
+    <input style="scale:1.5 ;" id="Quinto" type="radio" name="ciclo" value="Quinto">
+    <label for="Quinto">Quinto</label><br>
+    <input style="scale:1.5 ;" id="Sexto" type="radio" name="ciclo" value="Sexto" >
+    <label for="Sexto">Sexto</label>
+</p>
+
 
 <br>
 
@@ -424,8 +444,16 @@
 <input style="font-size: 20px;" type="email" name="correo" id="email" placeholder="@certus.edu.pe">    
 </label>
 
+<button style="font-size: 30px;" type="button"
+onclick="FCapturarNombre()">     Copiar Nombre a Observaciones </button>
+<br><br><br>
 
-<button style="font-size: 30px;" type="button" onclick="FCapturarNombre()"> Copiar Nombre a Observaciones </button>
+<button style="font-size: 30px;" type="button"
+onclick="FValidarCiclo()">     Enviar Ciclo a Observaciones </button>
+<br><br><br>
+
+<button style="font-size: 30px;" type="button"
+onclick="FCrearDatosCiclo()">     Ingresar datos por ciclo </button>
 <br><br><br>
 
 <button type="submit" style="font-size:30px ;" > enviar </button>
@@ -497,6 +525,9 @@
     <button style="font-size:25px ;" onclick="FEliminarConcat()">
         Eliminar concatenacion</button>   
 </section>
+
+<br>
+ 
 
 
   

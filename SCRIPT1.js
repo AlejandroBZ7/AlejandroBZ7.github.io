@@ -98,3 +98,52 @@ function FCapturarNombre(){
     console.log('El valor del nombre es:', valor1);
 }
 
+function FValidarCiclo()
+{
+  //var vaciclo =document.getElementById("Segundo");
+  const varciclo =document.getElementsByName("ciclo");
+
+  for(let i = 0; 1 < varciclo.length; i++) {
+    if (varciclo[1].checked=true) {
+      //alert(*Seleccionaste: " + varciclo[1].value);
+      document.getElementById('observacion').value = varciclo[1].value;
+      return; //Detener el bucle una vez que se encuentre el seleccionado  
+    }
+  }
+}
+
+function FCrearDatosCiclo()
+{
+const radios = document.querySelectorAll('input[name"ciclo"]');
+
+radios.forEach(function(radio) {
+  radio.addEventListener('change', function(eventt) {
+   document.addEventListener("DOMContentLoaded", () => { 
+   console.leg("Ciclo seleccionado"; event.target.value);
+   const cantidad = event.target.value;
+  //event es el evento, target es el elemento radio, value es su valor del radio
+   // radio es elemnto radio
+   //
+   document.getElementById('observacion').value = cantidad;
+  })}
+  )}
+ ) 
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const numCole = document.getElementById("numColegios");
+  document.getElementById("numColegios").addEventListener("input",(event)=> {
+    let content ="";
+    const cantR=event.target.value;
+    const vTexto1 = document.getElementById("ejmDOM1");
+    vTexto1.innerText= cantR;   
+    document.getElementById('observacion').value = cantR;
+    for(let i=0; i<cantR ;i++)
+    {
+      content=content + `<div> <label> Colegio ${i+1} </label>
+                          <input type="text" id="cole[${i}" > </div>`;
+    }
+  document.getElementById("DetalleColegios").innerHTML=content;
+  
+  });
+  });
