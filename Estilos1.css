@@ -1,3 +1,19 @@
+body {
+  background-color: #e6f2ff;
+  color: #003366;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: #003366;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 h2 { /* este estilo afecta a todos los h2 de INDEX2.HTML */
     font-size: 30px;
     color: rgb(196, 255, 214);
