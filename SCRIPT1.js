@@ -217,7 +217,7 @@ function FVerificacion() {
  if( longitudapellido1 < longitudapellido2 )
     {
    
-     alert("El primer apellido:" +apellido11 + "es menor al segundo apellido:"+ apellido2)
+     alert("El primer apellido:" +apellido1 + "es menor al segundo apellido:"+ apellido2)
    
       textoconcat = apellido2 + apellido1; // concatenado y asignado a txtoconcat
    
