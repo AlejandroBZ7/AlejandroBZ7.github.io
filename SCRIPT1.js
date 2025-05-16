@@ -120,3 +120,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     FCrearDatosCiclo(); // Para que los radios funcionen desde el inicio
 });
+
+document.addEventListener("DOMContentLoaded", () => {    
+    const palabraInput = document.getElementById('palabra');
+    if (palabraInput) {
+        palabraInput.addEventListener('input', function(e) {
+            const contenedor = document.getElementById('cajas');
+            contenedor.innerHTML = '';
+            for (let i = 0; i < e.target.value.length; i++) {
+                const inputNum = document.createElement('input');
+                inputNum.type = 'number';
+                contenedor.appendChild(inputNum);
+            }
+        });
+    }
+});
