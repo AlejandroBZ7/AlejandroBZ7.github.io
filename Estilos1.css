@@ -258,3 +258,40 @@ background-color: rgb(236, 222, 16);
 display: block;
 
 }
+
+.contenedor-palabra {
+    position: relative;
+    display: inline-block;
+    
+}
+
+#cajas {
+    position: absolute;
+    left: 170px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+#cajas input[type="palabra"] {
+    border: 2px solid rgb(255, 0, 0);
+
+}
+
+#palabra,
+#palabra:focus,
+#palabra:active {
+    border: 2px solid red;
+    outline: none;
+
+}
+
+#cajas input[type="number"],
+#cajas input[type="number"]:focus,
+#cajas input[type="number"]:active {
+    border: 2px solid blue;
+    outline: none;
+
+}
